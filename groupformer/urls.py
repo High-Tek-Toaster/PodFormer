@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 urlpatterns = [
+    path('', include('homepage.urls')),
     path('setup_screen/', include('setup_screen.urls')),
     path('results_screen/', include('results_screen.urls')),
     path('response_screen/', include('response_screen.urls')),
